@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Enum StandardPath</title>
+		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
+		<script type="text/javascript" src="../prettify/prettify.js">/**/</script>
+		<script type="text/javascript" src="../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="prettyPrint(); setupDdox();">
+		<nav id="main-nav">
+						<ul class="tree-view">
+							<li>
+								<a href="../standardpaths.html" class="selected module">standardpaths</a>
+							</li>
+						</ul>
+				<noscript>
+					<p style="color: red">The search functionality needs JavaScript enabled</p>
+				</noscript>
+				<div id="symbolSearchPane" style="display: none">
+					<p>
+						<input id="symbolSearch" type="text" placeholder="Search for symbols" onchange="performSymbolSearch(24);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+					</p>
+	<ul id="symbolSearchResults" style="display: none"></ul>
+	<script type="application/javascript" src="../symbols.js"></script>
+	<script type="application/javascript">
+var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();
+	</script>
+				</div>
+		</nav>
+		<div id="main-contents">
+			<h1>Enum StandardPath</h1>
+			<section>
+				<p> Locations that can be passed to <a href="../standardpaths/writablePath.html"><code class="prettyprint lang-d">writablePath</code></a> and <a href="../standardpaths/standardPaths.html"><code class="prettyprint lang-d">standardPaths</code></a> functions.
+</p>
+
+					<p>The enum base type is
+						<code class="prettyprint lang-d"><code class="prettyprint lang-d">int</code></code>
+.
+					</p>
+					<section>
+						<h3>Enum members</h3>
+						<table>
+							<col class="caption"/>
+							<tr>
+								<th>Name</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.applications.html">
+										<code>applications</code>
+									</a>
+								</td>
+								<td> User's <code class="prettyprint lang-d">applications</code>. This has different meaning across platforms.
+ On Windows it's directory where links to programs for Start menu are stored.
+ On OS X it's folder where <code class="prettyprint lang-d">applications</code> are typically put.
+ On Freedesktop it's directory where .desktop files are put.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.cache.html">
+										<code>cache</code>
+									</a>
+								</td>
+								<td> Location of cached <a href="../standardpaths/StandardPath.data.html"><code class="prettyprint lang-d">data</code></a>.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.config.html">
+										<code>config</code>
+									</a>
+								</td>
+								<td> General location of configuration files. Every application should have its own subdirectory here.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.data.html">
+										<code>data</code>
+									</a>
+								</td>
+								<td> General location of persisted application <code class="prettyprint lang-d">data</code>. Every application should have its own subdirectory here.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.desktop.html">
+										<code>desktop</code>
+									</a>
+								</td>
+								<td>User's <code class="prettyprint lang-d">desktop</code> directory.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.documents.html">
+										<code>documents</code>
+									</a>
+								</td>
+								<td>User's <code class="prettyprint lang-d">documents</code>.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.downloads.html">
+										<code>downloads</code>
+									</a>
+								</td>
+								<td>Directory for user's downloaded files.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.fonts.html">
+										<code>fonts</code>
+									</a>
+								</td>
+								<td> Location of <code class="prettyprint lang-d">fonts</code> files.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.music.html">
+										<code>music</code>
+									</a>
+								</td>
+								<td>User's <code class="prettyprint lang-d">music</code>.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.pictures.html">
+										<code>pictures</code>
+									</a>
+								</td>
+								<td>User's <code class="prettyprint lang-d">pictures</code>.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.publicShare.html">
+										<code>publicShare</code>
+									</a>
+								</td>
+								<td> Public share folder.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.startup.html">
+										<code>startup</code>
+									</a>
+								</td>
+								<td> Automatically started <a href="../standardpaths/StandardPath.applications.html"><code class="prettyprint lang-d">applications</code></a>.
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.templates.html">
+										<code>templates</code>
+									</a>
+								</td>
+								<td> Location of file <code class="prettyprint lang-d">templates</code> (e.g. office suite document <code class="prettyprint lang-d">templates</code>).
+</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="../standardpaths/StandardPath.videos.html">
+										<code>videos</code>
+									</a>
+								</td>
+								<td>User's <code class="prettyprint lang-d">videos</code> (movies).
+</td>
+							</tr>
+						</table>
+					</section>
+<section><h3>See Also</h3>
+<p>  <a href="../standardpaths/writablePath.html"><code class="prettyprint lang-d">writablePath</code></a>, <a href="../standardpaths/standardPaths.html"><code class="prettyprint lang-d">standardPaths</code></a>
+</p>
+</section>
+
+			</section>
+			<section>
+				<h2>Authors</h2>
+<p>  <a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
+</p>
+
+			</section>
+			<section>
+				<h2>Copyright</h2>
+<p>  Roman Chistokhodov 2015
+</p>
+
+			</section>
+			<section>
+				<h2>License</h2>
+<p>  <a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+</p>
+
+			</section>
+		</div>
+	</body>
+</html>

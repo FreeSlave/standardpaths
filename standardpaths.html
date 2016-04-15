@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Module standardpaths</title>
+		<link rel="stylesheet" type="text/css" href="./styles/ddox.css"/>
+		<link rel="stylesheet" href="./prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="./scripts/jquery.js">/**/</script>
+		<script type="text/javascript" src="./prettify/prettify.js">/**/</script>
+		<script type="text/javascript" src="./scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="prettyPrint(); setupDdox();">
+		<nav id="main-nav">
+						<ul class="tree-view">
+							<li>
+								<a href="./standardpaths.html" class="selected module">standardpaths</a>
+							</li>
+						</ul>
+				<noscript>
+					<p style="color: red">The search functionality needs JavaScript enabled</p>
+				</noscript>
+				<div id="symbolSearchPane" style="display: none">
+					<p>
+						<input id="symbolSearch" type="text" placeholder="Search for symbols" onchange="performSymbolSearch(24);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+					</p>
+	<ul id="symbolSearchResults" style="display: none"></ul>
+	<script type="application/javascript" src="./symbols.js"></script>
+	<script type="application/javascript">
+var symbolSearchRootDir = "./";
+$('#symbolSearchPane').show();
+	</script>
+				</div>
+		</nav>
+		<div id="main-contents">
+			<h1>Module standardpaths</h1>
+			<p> Functions for retrieving standard paths in cross-platform manner.
+</p>
+
+			<section></section>
+			<section>
+				<h2>Functions</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="binPaths" class="public" href="./standardpaths/binPaths.html">
+								<code>binPaths</code>
+							</a>
+						</td>
+						<td> System paths where executable files can be found.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="findExecutable" class="public" href="./standardpaths/findExecutable.html">
+								<code>findExecutable</code>
+							</a>
+						</td>
+						<td> Finds executable by <b><a href="./standardpaths/findExecutable.html#fileName"><code class="prettyprint lang-d">fileName</code></a></b> in the <a href="./standardpaths/findExecutable.html#paths"><code class="prettyprint lang-d">paths</code></a> specified by <b><a href="./standardpaths/findExecutable.html#paths"><code class="prettyprint lang-d">paths</code></a></b>.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="findExecutable" class="public" href="./standardpaths/findExecutable.html">
+								<code>findExecutable</code>
+							</a>
+						</td>
+						<td> ditto, but searches in system paths, determined by <b>PATH</b> environment variable.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="homeDir" class="public" href="./standardpaths/homeDir.html">
+								<code>homeDir</code>
+							</a>
+						</td>
+						<td> Current user home directory.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="roamingPath" class="public" href="./standardpaths/roamingPath.html">
+								<code>roamingPath</code>
+							</a>
+						</td>
+						<td> Path to <b>Roaming</b> data directory.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="runtimeDir" class="public" href="./standardpaths/runtimeDir.html">
+								<code>runtimeDir</code>
+							</a>
+						</td>
+						<td> Path to runtime user directory on freedesktop platforms.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="savedGames" class="public" href="./standardpaths/savedGames.html">
+								<code>savedGames</code>
+							</a>
+						</td>
+						<td> Location where games may store their saves.
+ This is common path for games. One should use subfolder for their game saves.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="standardPaths" class="public" href="./standardpaths/standardPaths.html">
+								<code>standardPaths</code>
+							</a>
+						</td>
+						<td> Getting paths for various locations.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="writablePath" class="public" href="./standardpaths/writablePath.html">
+								<code>writablePath</code>
+							</a>
+						</td>
+						<td> Getting writable paths for various locations.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Enums</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="FolderFlag" class="public" href="./standardpaths/FolderFlag.html">
+								<code>FolderFlag</code>
+							</a>
+						</td>
+						<td> Control behavior of functions.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="StandardPath" class="public" href="./standardpaths/StandardPath.html">
+								<code>StandardPath</code>
+							</a>
+						</td>
+						<td> Locations that can be passed to <a href="./standardpaths/writablePath.html"><code class="prettyprint lang-d">writablePath</code></a> and <a href="./standardpaths/standardPaths.html"><code class="prettyprint lang-d">standardPaths</code></a> functions.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Authors</h2>
+<p>  <a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
+</p>
+
+			</section>
+			<section>
+				<h2>Copyright</h2>
+<p>  Roman Chistokhodov 2015
+</p>
+
+			</section>
+			<section>
+				<h2>License</h2>
+<p>  <a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+</p>
+
+			</section>
+		</div>
+	</body>
+</html>

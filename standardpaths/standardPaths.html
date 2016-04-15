@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Function standardPaths</title>
+		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
+		<script type="text/javascript" src="../prettify/prettify.js">/**/</script>
+		<script type="text/javascript" src="../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="prettyPrint(); setupDdox();">
+		<nav id="main-nav">
+						<ul class="tree-view">
+							<li>
+								<a href="../standardpaths.html" class="selected module">standardpaths</a>
+							</li>
+						</ul>
+				<noscript>
+					<p style="color: red">The search functionality needs JavaScript enabled</p>
+				</noscript>
+				<div id="symbolSearchPane" style="display: none">
+					<p>
+						<input id="symbolSearch" type="text" placeholder="Search for symbols" onchange="performSymbolSearch(24);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+					</p>
+	<ul id="symbolSearchResults" style="display: none"></ul>
+	<script type="application/javascript" src="../symbols.js"></script>
+	<script type="application/javascript">
+var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();
+	</script>
+				</div>
+		</nav>
+		<div id="main-contents">
+			<h1>Function standardPaths</h1>
+			<section>
+				<p> Getting paths for various locations.
+</p>
+
+					<section>
+						<h3>Prototype</h3>
+						<pre class="code prettyprint lang-d prototype">
+string[] standardPaths(
+&nbsp;&nbsp;<a href="../standardpaths/StandardPath.html">StandardPath</a> type
+) nothrow @safe;</pre>
+					</section>
+<section><h3>Returns</h3>
+<p>Array of paths where files of <u><a href="../standardpaths/standardPaths.html#type"><code class="prettyprint lang-d">type</code></a></u> belong including one returned by <b><a href="../standardpaths/writablePath.html"><code class="prettyprint lang-d">writablePath</code></a></b>, or an empty array if no paths are defined for <u><a href="../standardpaths/standardPaths.html#type"><code class="prettyprint lang-d">type</code></a></u>.
+ This function does not ensure if all returned paths exist and appear to be accessible directories. Returned strings are not required to be unique.
+</p>
+</section>
+<section><h3>Note</h3>
+<p>This function does cache its results.
+ It may cause performance impact to call this function often since retrieving some paths can be relatively expensive operation.
+</p>
+</section>
+<section><h3>See Also</h3>
+<p>  <a href="../standardpaths/writablePath.html"><code class="prettyprint lang-d">writablePath</code></a>
+</p>
+</section>
+
+			</section>
+			<section>
+				<h2>Authors</h2>
+<p>  <a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
+</p>
+
+			</section>
+			<section>
+				<h2>Copyright</h2>
+<p>  Roman Chistokhodov 2015
+</p>
+
+			</section>
+			<section>
+				<h2>License</h2>
+<p>  <a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+</p>
+
+			</section>
+		</div>
+	</body>
+</html>

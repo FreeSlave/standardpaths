@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>findExecutable - multiple declarations</title>
+		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
+		<script type="text/javascript" src="../prettify/prettify.js">/**/</script>
+		<script type="text/javascript" src="../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="prettyPrint(); setupDdox();">
+		<nav id="main-nav">
+						<ul class="tree-view">
+							<li>
+								<a href="../standardpaths.html" class="selected module">standardpaths</a>
+							</li>
+						</ul>
+				<noscript>
+					<p style="color: red">The search functionality needs JavaScript enabled</p>
+				</noscript>
+				<div id="symbolSearchPane" style="display: none">
+					<p>
+						<input id="symbolSearch" type="text" placeholder="Search for symbols" onchange="performSymbolSearch(24);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+					</p>
+	<ul id="symbolSearchResults" style="display: none"></ul>
+	<script type="application/javascript" src="../symbols.js"></script>
+	<script type="application/javascript">
+var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();
+	</script>
+				</div>
+		</nav>
+		<div id="main-contents">
+			<h1>findExecutable - multiple declarations</h1>
+			<ul>
+				<li>Function findExecutable</li>
+				<li>Function findExecutable</li>
+			</ul>
+			<section>
+				<h2>Function findExecutable</h2>
+				<p> Finds executable by <b><a href="../standardpaths/findExecutable.html#fileName"><code class="prettyprint lang-d">fileName</code></a></b> in the <a href="../standardpaths/findExecutable.html#paths"><code class="prettyprint lang-d">paths</code></a> specified by <b><a href="../standardpaths/findExecutable.html#paths"><code class="prettyprint lang-d">paths</code></a></b>.
+</p>
+
+					<section>
+						<h3>Prototype</h3>
+						<pre class="code prettyprint lang-d prototype">
+string findExecutable(Range)(
+&nbsp;&nbsp;string fileName,
+&nbsp;&nbsp;Range paths
+) nothrow @trusted
+if (isInputRange!Range &amp;&amp; is(ElementType!Range : string));</pre>
+					</section>
+<section><h3>Returns</h3>
+<p>Absolute path to the existing executable file or an empty string if not found.
+</p>
+</section>
+<section><h3>Parameters</h3>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="fileName">fileName</td><td> Name of executable to search. If it's absolute path, this function only checks if the file is executable.</td></tr>
+<tr><td id="paths">paths</td><td> Range of directories where executable should be searched.</td></tr>
+</table>
+</section>
+<section><h3>Note</h3>
+<p>On Windows when <a href="../standardpaths/findExecutable.html#fileName"><code class="prettyprint lang-d">fileName</code></a> extension is omitted, executable extensions will be automatically appended during search.
+</p>
+</section>
+
+			</section>
+			<section>
+				<h2>Function findExecutable</h2>
+				<p> ditto, but searches in system paths, determined by <b>PATH</b> environment variable.
+</p>
+
+					<section>
+						<h3>Prototype</h3>
+						<pre class="code prettyprint lang-d prototype">
+string findExecutable(
+&nbsp;&nbsp;string fileName
+) nothrow @safe;</pre>
+					</section>
+<section><h3>See Also</h3>
+<p><a href="../standardpaths/binPaths.html"><code class="prettyprint lang-d">binPaths</code></a>
+</p>
+</section>
+
+			</section>
+			<section>
+				<h2>Authors</h2>
+<p>  <a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
+</p>
+
+			</section>
+			<section>
+				<h2>Copyright</h2>
+<p>  Roman Chistokhodov 2015
+</p>
+
+			</section>
+			<section>
+				<h2>License</h2>
+<p>  <a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+</p>
+
+			</section>
+		</div>
+	</body>
+</html>
