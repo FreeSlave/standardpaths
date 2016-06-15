@@ -6,10 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="./styles/ddox.css"/>
 		<link rel="stylesheet" href="./prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="./scripts/jquery.js">/**/</script>
-		<script type="text/javascript" src="./prettify/prettify.js">/**/</script>
 		<script type="text/javascript" src="./scripts/ddox.js">/**/</script>
 	</head>
-	<body onload="prettyPrint(); setupDdox();">
+	<body onload="setupDdox();">
 		<nav id="main-nav">
 						<ul class="tree-view">
 							<li>
@@ -33,7 +32,7 @@ $('#symbolSearchPane').show();
 		</nav>
 		<div id="main-contents">
 			<h1>Module standardpaths</h1>
-			<p> Functions for retrieving standard paths in cross-platform manner.
+			<p>Functions for retrieving standard paths in cross-platform manner.
 </p>
 
 			<section></section>
@@ -47,38 +46,11 @@ $('#symbolSearchPane').show();
 					</tr>
 					<tr>
 						<td>
-							<a id="binPaths" class="public" href="./standardpaths/binPaths.html">
-								<code>binPaths</code>
-							</a>
-						</td>
-						<td> System paths where executable files can be found.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a id="findExecutable" class="public" href="./standardpaths/findExecutable.html">
-								<code>findExecutable</code>
-							</a>
-						</td>
-						<td> Finds executable by <b><a href="./standardpaths/findExecutable.html#fileName"><code class="prettyprint lang-d">fileName</code></a></b> in the <a href="./standardpaths/findExecutable.html#paths"><code class="prettyprint lang-d">paths</code></a> specified by <b><a href="./standardpaths/findExecutable.html#paths"><code class="prettyprint lang-d">paths</code></a></b>.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a id="findExecutable" class="public" href="./standardpaths/findExecutable.html">
-								<code>findExecutable</code>
-							</a>
-						</td>
-						<td> ditto, but searches in system paths, determined by <b>PATH</b> environment variable.
-</td>
-					</tr>
-					<tr>
-						<td>
 							<a id="homeDir" class="public" href="./standardpaths/homeDir.html">
 								<code>homeDir</code>
 							</a>
 						</td>
-						<td> Current user home directory.
+						<td>Current user home directory.
 </td>
 					</tr>
 					<tr>
@@ -87,16 +59,7 @@ $('#symbolSearchPane').show();
 								<code>roamingPath</code>
 							</a>
 						</td>
-						<td> Path to <b>Roaming</b> data directory.
-</td>
-					</tr>
-					<tr>
-						<td>
-							<a id="runtimeDir" class="public" href="./standardpaths/runtimeDir.html">
-								<code>runtimeDir</code>
-							</a>
-						</td>
-						<td> Path to runtime user directory on freedesktop platforms.
+						<td>Path to <b>Roaming</b> data directory.
 </td>
 					</tr>
 					<tr>
@@ -105,7 +68,7 @@ $('#symbolSearchPane').show();
 								<code>savedGames</code>
 							</a>
 						</td>
-						<td> Location where games may store their saves.
+						<td>Location where games may store their saves.
  This is common path for games. One should use subfolder for their game saves.
 </td>
 					</tr>
@@ -115,7 +78,7 @@ $('#symbolSearchPane').show();
 								<code>standardPaths</code>
 							</a>
 						</td>
-						<td> Getting paths for various locations.
+						<td>Getting paths for various locations.
 </td>
 					</tr>
 					<tr>
@@ -124,7 +87,7 @@ $('#symbolSearchPane').show();
 								<code>writablePath</code>
 							</a>
 						</td>
-						<td> Getting writable paths for various locations.
+						<td>Getting writable paths for various locations.
 </td>
 					</tr>
 				</table>
@@ -143,7 +106,7 @@ $('#symbolSearchPane').show();
 								<code>FolderFlag</code>
 							</a>
 						</td>
-						<td> Control behavior of functions.
+						<td>Control behavior of functions.
 </td>
 					</tr>
 					<tr>
@@ -152,26 +115,26 @@ $('#symbolSearchPane').show();
 								<code>StandardPath</code>
 							</a>
 						</td>
-						<td> Locations that can be passed to <a href="./standardpaths/writablePath.html"><code class="prettyprint lang-d">writablePath</code></a> and <a href="./standardpaths/standardPaths.html"><code class="prettyprint lang-d">standardPaths</code></a> functions.
+						<td>Location types that can be passed to writablePath and standardPaths functions.
 </td>
 					</tr>
 				</table>
 			</section>
 			<section>
 				<h2>Authors</h2>
-<p>  <a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
+<p><a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
 </p>
 
 			</section>
 			<section>
 				<h2>Copyright</h2>
-<p>  Roman Chistokhodov 2015
+<p>Roman Chistokhodov 2015-2016
 </p>
 
 			</section>
 			<section>
 				<h2>License</h2>
-<p>  <a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
 </p>
 
 			</section>

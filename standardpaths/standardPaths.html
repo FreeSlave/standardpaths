@@ -6,10 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
 		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
-		<script type="text/javascript" src="../prettify/prettify.js">/**/</script>
 		<script type="text/javascript" src="../scripts/ddox.js">/**/</script>
 	</head>
-	<body onload="prettyPrint(); setupDdox();">
+	<body onload="setupDdox();">
 		<nav id="main-nav">
 						<ul class="tree-view">
 							<li>
@@ -34,18 +33,23 @@ $('#symbolSearchPane').show();
 		<div id="main-contents">
 			<h1>Function standardPaths</h1>
 			<section>
-				<p> Getting paths for various locations.
+				<p>Getting paths for various locations.
 </p>
 
 					<section>
 						<h3>Prototype</h3>
-						<pre class="code prettyprint lang-d prototype">
-string[] standardPaths(
-&nbsp;&nbsp;<a href="../standardpaths/StandardPath.html">StandardPath</a> type
-) nothrow @safe;</pre>
+						<div class="prototype">
+							<code class="lang-d">
+<span class="typ">string</span><span class="pun">[]</span> <span class="pln">standardPaths</span><span class="pun">(</span>
+								<br/>
+&nbsp;&nbsp;<a href="../standardpaths/StandardPath.html"><span class="typ">StandardPath</span></a> <span class="pln">type</span>
+								<br/>
+<span class="pun">)</span><span class="pln"> </span><span class="kwd">nothrow @safe</span><span class="pun">;</span>
+							</code>
+						</div>
 					</section>
 <section><h3>Returns</h3>
-<p>Array of paths where files of <u><a href="../standardpaths/standardPaths.html#type"><code class="prettyprint lang-d">type</code></a></u> belong including one returned by <b><a href="../standardpaths/writablePath.html"><code class="prettyprint lang-d">writablePath</code></a></b>, or an empty array if no paths are defined for <u><a href="../standardpaths/standardPaths.html#type"><code class="prettyprint lang-d">type</code></a></u>.
+<p>Array of paths where files of <u>type</u> belong including one returned by <code class="lang-d"><a href="../standardpaths/writablePath.html"><span class="pln">writablePath</span></a></code>, or an empty array if no paths are defined for <u>type</u>.
  This function does not ensure if all returned paths exist and appear to be accessible directories. Returned strings are not required to be unique.
 </p>
 </section>
@@ -55,26 +59,26 @@ string[] standardPaths(
 </p>
 </section>
 <section><h3>See Also</h3>
-<p>  <a href="../standardpaths/writablePath.html"><code class="prettyprint lang-d">writablePath</code></a>
+<p><code class="lang-d"><a href="../standardpaths/writablePath.html"><span class="pln">writablePath</span></a></code>
 </p>
 </section>
 
 			</section>
 			<section>
 				<h2>Authors</h2>
-<p>  <a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
+<p><a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
 </p>
 
 			</section>
 			<section>
 				<h2>Copyright</h2>
-<p>  Roman Chistokhodov 2015
+<p>Roman Chistokhodov 2015-2016
 </p>
 
 			</section>
 			<section>
 				<h2>License</h2>
-<p>  <a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
 </p>
 
 			</section>

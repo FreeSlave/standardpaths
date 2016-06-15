@@ -2,16 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>http://127.0.0.1/index.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths.html</loc></url>
-<url><loc>http://127.0.0.1/standardpaths/binPaths.html</loc></url>
-<url><loc>http://127.0.0.1/standardpaths/findExecutable.html</loc></url>
-<url><loc>http://127.0.0.1/standardpaths/findExecutable.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/FolderFlag.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/FolderFlag.create.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/FolderFlag.none.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/FolderFlag.verify.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/homeDir.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/roamingPath.html</loc></url>
-<url><loc>http://127.0.0.1/standardpaths/runtimeDir.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/savedGames.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/StandardPath.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/StandardPath.applications.html</loc></url>

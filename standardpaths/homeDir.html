@@ -6,10 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
 		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
-		<script type="text/javascript" src="../prettify/prettify.js">/**/</script>
 		<script type="text/javascript" src="../scripts/ddox.js">/**/</script>
 	</head>
-	<body onload="prettyPrint(); setupDdox();">
+	<body onload="setupDdox();">
 		<nav id="main-nav">
 						<ul class="tree-view">
 							<li>
@@ -34,13 +33,16 @@ $('#symbolSearchPane').show();
 		<div id="main-contents">
 			<h1>Function homeDir</h1>
 			<section>
-				<p> Current user home directory.
+				<p>Current user home directory.
 </p>
 
 					<section>
 						<h3>Prototype</h3>
-						<pre class="code prettyprint lang-d prototype">
-string homeDir() nothrow @safe;</pre>
+						<div class="prototype">
+							<code class="lang-d">
+<span class="typ">string</span> <span class="pln">homeDir<span class="pun">()</span><span class="pln"> </span><span class="kwd">nothrow @safe</span><span class="pun">;</span>
+							</code>
+						</div>
 					</section>
 <section><h3>Returns</h3>
 <p>Path to user home directory, or an empty string if could not determine home directory.
@@ -55,19 +57,19 @@ string homeDir() nothrow @safe;</pre>
 			</section>
 			<section>
 				<h2>Authors</h2>
-<p>  <a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
+<p><a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
 </p>
 
 			</section>
 			<section>
 				<h2>Copyright</h2>
-<p>  Roman Chistokhodov 2015
+<p>Roman Chistokhodov 2015-2016
 </p>
 
 			</section>
 			<section>
 				<h2>License</h2>
-<p>  <a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
 </p>
 
 			</section>
