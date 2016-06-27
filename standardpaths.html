@@ -59,7 +59,7 @@ $('#symbolSearchPane').show();
 								<code>roamingPath</code>
 							</a>
 						</td>
-						<td>Path to <b>Roaming</b> data directory.
+						<td>Path to <b>Roaming</b> data directory. Windows only.
 </td>
 					</tr>
 					<tr>
@@ -68,8 +68,7 @@ $('#symbolSearchPane').show();
 								<code>savedGames</code>
 							</a>
 						</td>
-						<td>Location where games may store their saves.
- This is common path for games. One should use subfolder for their game saves.
+						<td>Location where games may store their saves. Windows only.
 </td>
 					</tr>
 					<tr>
@@ -78,7 +77,16 @@ $('#symbolSearchPane').show();
 								<code>standardPaths</code>
 							</a>
 						</td>
-						<td>Getting paths for various locations.
+						<td>Get paths for various locations.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="standardPaths" class="public" href="./standardpaths/standardPaths.html">
+								<code>standardPaths</code>
+							</a>
+						</td>
+						<td>Evaluate paths for various locations and append subfolder.
 </td>
 					</tr>
 					<tr>
@@ -87,7 +95,17 @@ $('#symbolSearchPane').show();
 								<code>writablePath</code>
 							</a>
 						</td>
-						<td>Getting writable paths for various locations.
+						<td>Get writable path for specific location.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="writablePath" class="public" href="./standardpaths/writablePath.html">
+								<code>writablePath</code>
+							</a>
+						</td>
+						<td>Evaluate writable path for specific location and append subfolder.
+ This can be used with <code class="lang-d"><a href="./standardpaths/StandardPath.config.html"><span class="typ">StandardPath<wbr/></span><span class="pun">.</span><span class="pln">config</span></a></code> and <code class="lang-d"><a href="./standardpaths/StandardPath.data.html"><span class="typ">StandardPath<wbr/></span><span class="pun">.</span><span class="pln">data</span></a></code> to retrieve folder specific for this application instead of generic path.
 </td>
 					</tr>
 				</table>
@@ -115,7 +133,7 @@ $('#symbolSearchPane').show();
 								<code>StandardPath</code>
 							</a>
 						</td>
-						<td>Location types that can be passed to writablePath and standardPaths functions.
+						<td>Location types that can be passed to <code class="lang-d"><a href="./standardpaths/writablePath.html"><span class="pln">writablePath</span></a></code> and <code class="lang-d"><a href="./standardpaths/standardPaths.html"><span class="pln">standardPaths</span></a></code> functions.
 </td>
 					</tr>
 				</table>

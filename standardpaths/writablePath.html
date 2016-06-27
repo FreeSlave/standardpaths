@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<title>Function writablePath</title>
+		<title>writablePath - multiple declarations</title>
 		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
 		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
@@ -31,9 +31,14 @@ $('#symbolSearchPane').show();
 				</div>
 		</nav>
 		<div id="main-contents">
-			<h1>Function writablePath</h1>
+			<h1>writablePath - multiple declarations</h1>
+			<ul>
+				<li>Function writablePath</li>
+				<li>Function writablePath</li>
+			</ul>
 			<section>
-				<p>Getting writable paths for various locations.
+				<h2>Function writablePath</h2>
+				<p>Get writable path for specific location.
 </p>
 
 					<section>
@@ -56,7 +61,7 @@ $('#symbolSearchPane').show();
 </section>
 <section><h3>Parameters</h3>
 <table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
-<tr><td id="type">type</td><td> Directory to lookup.</td></tr>
+<tr><td id="type">type</td><td> Location to lookup.</td></tr>
 <tr><td id="params">params</td><td> Union of <code class="lang-d"><a href="../standardpaths/FolderFlag.html"><span class="typ">FolderFlag</span></a></code>s.</td></tr>
 </table>
 </section>
@@ -64,9 +69,70 @@ $('#symbolSearchPane').show();
 <p>This function does not cache its results.
 </p>
 </section>
+<section><h3>Example</h3>
+<pre class="code"><code class="lang-d"><span class="typ">string </span><span class="pln">downloadsDir </span><span class="pun">= </span><span class="pln">writablePath</span><span class="pun">(<a href="../standardpaths/StandardPath.downloads.html"></span><span class="typ">StandardPath<wbr/></span><span class="pun">.</span><span class="pln">downloads</span></a><span class="pun">, <a href="../standardpaths/FolderFlag.verify.html"></span><span class="typ">FolderFlag<wbr/></span><span class="pun">.</span><span class="pln">verify</span></a><span class="pun">);
+</span><span class="kwd">if </span><span class="pun">(</span><span class="pln">downloadsDir<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">) {
+    </span><span class="com">//Open file dialog with this directory.
+</span><span class="pun">} </span><span class="kwd">else </span><span class="pun">{
+    </span><span class="com">//Could not detect default downloads directory.
+    //Ask user to choose default downloads directory for this application.
+</span><span class="pun">}</span></code></pre>
+</section>
 <section><h3>See Also</h3>
-<p><code class="lang-d"><a href="../standardpaths/FolderFlag.html"><span class="typ">FolderFlag</span></a></code>
+<p><code class="lang-d"><a href="../standardpaths/StandardPath.html"><span class="typ">StandardPath</span></a></code>, <code class="lang-d"><a href="../standardpaths/FolderFlag.html"><span class="typ">FolderFlag</span></a></code>, <code class="lang-d"><a href="../standardpaths/standardPaths.html"><span class="pln">standardPaths</span></a></code>
 </p>
+</section>
+
+			</section>
+			<section>
+				<h2>Function writablePath</h2>
+				<p>Evaluate writable path for specific location and append subfolder.
+ This can be used with <code class="lang-d"><a href="../standardpaths/StandardPath.config.html"><span class="typ">StandardPath<wbr/></span><span class="pun">.</span><span class="pln">config</span></a></code> and <code class="lang-d"><a href="../standardpaths/StandardPath.data.html"><span class="typ">StandardPath<wbr/></span><span class="pun">.</span><span class="pln">data</span></a></code> to retrieve folder specific for this application instead of generic path.
+</p>
+
+					<section>
+						<h3>Prototype</h3>
+						<div class="prototype">
+							<code class="lang-d">
+<span class="typ">string</span> <span class="pln">writablePath</span><span class="pun">(</span>
+								<br/>
+&nbsp;&nbsp;<a href="../standardpaths/StandardPath.html"><span class="typ">StandardPath</span></a> <span class="pln">type</span><span class="pun">,</span>
+								<br/>
+&nbsp;&nbsp;<span class="typ">string</span> <span class="pln">subfolder</span><span class="pun">,</span>
+								<br/>
+&nbsp;&nbsp;<a href="../standardpaths/FolderFlag.html"><span class="typ">FolderFlag</span></a> <span class="pln">params</span> <span class="pun">=</span> <span class="kwd">cast</span><span class="pun">(</span><span class="typ">FolderFlag</span><span class="pun">)</span><span class="lit">0</span>
+								<br/>
+<span class="pun">)</span><span class="pln"> </span><span class="kwd">nothrow @safe</span><span class="pun">;</span>
+							</code>
+						</div>
+					</section>
+<section><h3>Returns</h3>
+<p>Path where files of <u>type</u> should be written to by current user concatenated with subfolder,
+  or an empty string if could not determine path.
+</p>
+</section>
+<section><h3>Parameters</h3>
+<table><col class="caption"><tr><th>Name</th><th>Description</th></tr>
+<tr><td id="type">type</td><td> Location to lookup.</td></tr>
+<tr><td id="subfolder">subfolder</td><td> Subfolder that will be appended to base writable path.</td></tr>
+<tr><td id="params">params</td><td> Union of <code class="lang-d"><a href="../standardpaths/FolderFlag.html"><span class="typ">FolderFlag</span></a></code>s. This affects both base path and sub path.</td></tr>
+</table>
+</section>
+<section><h3>Note</h3>
+<p>This function does not cache its results.
+</p>
+</section>
+<section><h3>Example</h3>
+<pre class="code"><code class="lang-d"><span class="kwd">enum </span><span class="pln">organizationName </span><span class="pun">= </span><span class="str">"MyLittleCompany"</span><span class="pun">;
+</span><span class="kwd">enum </span><span class="pln">applicationName </span><span class="pun">= </span><span class="str">"MyLittleApplication"</span><span class="pun">;
+
+</span><span class="typ">string </span><span class="pln">configDir </span><span class="pun">= <a href="../standardpaths/writablePath.html"></span><span class="pln">writablePath</span></a><span class="pun">(<a href="../standardpaths/StandardPath.config.html"></span><span class="typ">StandardPath<wbr/></span><span class="pun">.</span><span class="pln">config</span></a><span class="pun">, </span><span class="pln">buildPath</span><span class="pun">(</span><span class="pln">organizationName</span><span class="pun">, </span><span class="pln">applicationName</span><span class="pun">), <a href="../standardpaths/FolderFlag.create.html"></span><span class="typ">FolderFlag<wbr/></span><span class="pun">.</span><span class="pln">create</span></a><span class="pun">);
+</span><span class="kwd">if </span><span class="pun">(</span><span class="pln">configDir<wbr/></span><span class="pun">.</span><span class="pln">length</span><span class="pun">) {
+    </span><span class="typ">string </span><span class="pln">configFile </span><span class="pun">= </span><span class="pln">buildPath</span><span class="pun">(</span><span class="pln">configDir</span><span class="pun">, </span><span class="str">"config.conf"</span><span class="pun">);
+    </span><span class="com">//read or write configuration file.
+</span><span class="pun">} </span><span class="kwd">else </span><span class="pun">{
+    </span><span class="kwd">throw new </span><span class="typ">Exception</span><span class="pun">(</span><span class="str">"Could not create application config directory"</span><span class="pun">);
+}</span></code></pre>
 </section>
 
 			</section>

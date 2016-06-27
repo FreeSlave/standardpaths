@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<title>Function standardPaths</title>
+		<title>standardPaths - multiple declarations</title>
 		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
 		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
 		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
@@ -31,9 +31,14 @@ $('#symbolSearchPane').show();
 				</div>
 		</nav>
 		<div id="main-contents">
-			<h1>Function standardPaths</h1>
+			<h1>standardPaths - multiple declarations</h1>
+			<ul>
+				<li>Function standardPaths</li>
+				<li>Function standardPaths</li>
+			</ul>
 			<section>
-				<p>Getting paths for various locations.
+				<h2>Function standardPaths</h2>
+				<p>Get paths for various locations.
 </p>
 
 					<section>
@@ -58,9 +63,41 @@ $('#symbolSearchPane').show();
  It may cause performance impact to call this function often since retrieving some paths can be relatively expensive operation.
 </p>
 </section>
+<section><h3>Example</h3>
+<pre class="code"><code class="lang-d"><span class="typ">string</span><span class="pun">[] </span><span class="pln">templateDirs </span><span class="pun">= </span><span class="pln">standardPaths</span><span class="pun">(<a href="../standardpaths/StandardPath.templates.html"></span><span class="typ">StandardPath<wbr/></span><span class="pun">.</span><span class="pln">templates</span></a><span class="pun">);
+</span><span class="com">//List all available file templates including system defined and user created ones.</span></code></pre>
+</section>
 <section><h3>See Also</h3>
-<p><code class="lang-d"><a href="../standardpaths/writablePath.html"><span class="pln">writablePath</span></a></code>
+<p><code class="lang-d"><a href="../standardpaths/StandardPath.html"><span class="typ">StandardPath</span></a></code>, <code class="lang-d"><a href="../standardpaths/writablePath.html"><span class="pln">writablePath</span></a></code>
 </p>
+</section>
+
+			</section>
+			<section>
+				<h2>Function standardPaths</h2>
+				<p>Evaluate paths for various locations and append subfolder.
+</p>
+
+					<section>
+						<h3>Prototype</h3>
+						<div class="prototype">
+							<code class="lang-d">
+<span class="typ">string</span><span class="pun">[]</span> <span class="pln">standardPaths</span><span class="pun">(</span>
+								<br/>
+&nbsp;&nbsp;<a href="../standardpaths/StandardPath.html"><span class="typ">StandardPath</span></a> <span class="pln">type</span><span class="pun">,</span>
+								<br/>
+&nbsp;&nbsp;<span class="typ">string</span> <span class="pln">subfolder</span>
+								<br/>
+<span class="pun">)</span><span class="pln"> </span><span class="kwd">nothrow @safe</span><span class="pun">;</span>
+							</code>
+						</div>
+					</section>
+<section><h3>Example</h3>
+<pre class="code"><code class="lang-d"><span class="kwd">enum </span><span class="pln">organizationName </span><span class="pun">= </span><span class="str">"MyLittleCompany"</span><span class="pun">;
+</span><span class="kwd">enum </span><span class="pln">applicationName </span><span class="pun">= </span><span class="str">"MyLittleApplication"</span><span class="pun">;
+
+</span><span class="typ">string</span><span class="pun">[] </span><span class="pln">appDataDirs </span><span class="pun">= <a href="../standardpaths/standardPaths.html"></span><span class="pln">standardPaths</span></a><span class="pun">(<a href="../standardpaths/StandardPath.data.html"></span><span class="typ">StandardPath<wbr/></span><span class="pun">.</span><span class="pln">data</span></a><span class="pun">, </span><span class="pln">buildPath</span><span class="pun">(</span><span class="pln">organizationName</span><span class="pun">, </span><span class="pln">applicationName</span><span class="pun">));
+</span><span class="com">//Gather data files for this application from each found directory.</span></code></pre>
 </section>
 
 			</section>
