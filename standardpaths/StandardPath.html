@@ -55,9 +55,7 @@ $('#symbolSearchPane').show();
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.applications.html">
-										<code>applications</code>
-									</a>
+									<code>applications</code>
 								</td>
 								<td>User's applications. This has different meaning across platforms.
  On Windows it's directory where links (.lnk) to programs for Start menu are stored.
@@ -67,99 +65,97 @@ $('#symbolSearchPane').show();
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.cache.html">
-										<code>cache</code>
-									</a>
+									<code>cache</code>
 								</td>
 								<td>Location of cached data.
+<section><h4>Note</h4>
+<p>Not available on Windows.
+</p>
+</section>
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.config.html">
-										<code>config</code>
-									</a>
+									<code>config</code>
 								</td>
 								<td>General location of configuration files. Every application should have its own subdirectory here.
+<section><h4>Note</h4>
+<p>on Windows it's the same as <code class="lang-d"><a href="../standardpaths/StandardPath.data.html"><span class="pln">data</span></a></code> path.
+</p>
+</section>
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.data.html">
-										<code>data</code>
-									</a>
+									<code>data</code>
 								</td>
 								<td>General location of persisted application data. Every application should have its own subdirectory here.
+<section><h4>Note</h4>
+<p>on Windows it's the same as <code class="lang-d"><a href="../standardpaths/StandardPath.config.html"><span class="pln">config</span></a></code> path.
+</p>
+</section>
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.desktop.html">
-										<code>desktop</code>
-									</a>
+									<code>desktop</code>
 								</td>
 								<td>User's desktop directory.
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.documents.html">
-										<code>documents</code>
-									</a>
+									<code>documents</code>
 								</td>
 								<td>User's documents.
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.downloads.html">
-										<code>downloads</code>
-									</a>
+									<code>downloads</code>
 								</td>
 								<td>Directory for user's downloaded files.
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.fonts.html">
-										<code>fonts</code>
-									</a>
+									<code>fonts</code>
 								</td>
 								<td>Location of fonts files.
+<section><h4>Note</h4>
+<p>don't rely on this on freedesktop, since it uses hardcoded paths there. Better consider using <a href="http://www.freedesktop.org/wiki/Software/fontconfig/">fontconfig library</a>
+</p>
+</section>
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.music.html">
-										<code>music</code>
-									</a>
+									<code>music</code>
 								</td>
 								<td>User's music.
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.pictures.html">
-										<code>pictures</code>
-									</a>
+									<code>pictures</code>
 								</td>
 								<td>User's pictures.
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.publicShare.html">
-										<code>publicShare</code>
-									</a>
+									<code>publicShare</code>
 								</td>
 								<td>Public share folder.
+<section><h4>Note</h4>
+<p>Not available on Windows.
+</p>
+</section>
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.startup.html">
-										<code>startup</code>
-									</a>
+									<code>startup</code>
 								</td>
 								<td>Automatically started applications.
  On Windows it's directory where links (.lnk) to autostarted programs are stored.
@@ -169,18 +165,18 @@ $('#symbolSearchPane').show();
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.templates.html">
-										<code>templates</code>
-									</a>
+									<code>templates</code>
 								</td>
 								<td>Location of file templates (e.g. office suite document templates).
+<section><h4>Note</h4>
+<p>Not available on OS X.
+</p>
+</section>
 </td>
 							</tr>
 							<tr>
 								<td>
-									<a href="../standardpaths/StandardPath.videos.html">
-										<code>videos</code>
-									</a>
+									<code>videos</code>
 								</td>
 								<td>User's videos (movies).
 </td>
@@ -195,7 +191,7 @@ $('#symbolSearchPane').show();
 			</section>
 			<section>
 				<h2>Authors</h2>
-<p><a href="https://github.com/MyLittleRobo">Roman Chistokhodov</a>
+<p><a href="https://github.com/FreeSlave">Roman Chistokhodov</a>
 </p>
 
 			</section>
