@@ -1,102 +1,30 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8"/>
-		<title>Enum FolderFlag</title>
-		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
-		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
-		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
-		<script type="text/javascript" src="../scripts/ddox.js">/**/</script>
-	</head>
-	<body onload="setupDdox();">
-		<nav id="main-nav">
-						<ul class="tree-view">
-							<li>
-								<a href="../standardpaths.html" class="selected module">standardpaths</a>
-							</li>
-						</ul>
-				<noscript>
-					<p style="color: red">The search functionality needs JavaScript enabled</p>
-				</noscript>
-				<div id="symbolSearchPane" style="display: none">
-					<p>
-						<input id="symbolSearch" type="text" placeholder="Search for symbols" onchange="performSymbolSearch(24);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
-					</p>
-	<ul id="symbolSearchResults" style="display: none"></ul>
-	<script type="application/javascript" src="../symbols.js"></script>
-	<script type="application/javascript">
-var symbolSearchRootDir = "../";
-$('#symbolSearchPane').show();
-	</script>
-				</div>
-		</nav>
-		<div id="main-contents">
-			<h1>Enum FolderFlag</h1>
-			<section>
-				<p>Control behavior of functions.
-</p>
-
-					<p>The enum base type is
-						<code class="prettyprint lang-d"><span class="typ">int</span></code>
-.
-					</p>
-					<section>
-						<h3>Enum members</h3>
-						<table>
-							<col class="caption"/>
-							<tr>
-								<th>Name</th>
-								<th>Description</th>
-							</tr>
-							<tr>
-								<td>
-									<code>create</code>
-								</td>
-								<td>Create if folder does not exist.
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8"/>
+<title>Enum FolderFlag</title>
+<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+<script type="text/javascript" src="../scripts/jquery.js">/**/</script><script type="text/javascript" src="../scripts/ddox.js">/**/</script></head><body onload="setupDdox();"><nav id="main-nav"><noscript><p style="color: red">The search functionality needs JavaScript enabled</p></noscript><div id="symbolSearchPane" style="display: none"><form action="#" method="GET">
+<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/></form><ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script></div><ul class="tree-view"><li><div class="module selected"><a href="../standardpaths.html">standardpaths</a></div></li></ul></nav><div id="main-contents"><h1>Enum FolderFlag</h1><p>Control behavior of functions.
+</p><div class="prototype"><code class="lang-d"><div class="single-prototype"><span class="kwd">enum</span> <span class="typ">FolderFlag</span>
+ <span class="pun">:</span> <span class="typ">int</span> <span class="pun">{ ... }</span></div></code></div>
+<section><h2>Enum members</h2><h4>Enum members</h4><table>
+<col class="caption"/>
+<tr><th>Name</th><th>Description</th></tr><tr><td><code>create</code></td><td>Create if folder does not exist.
  On Windows and OS X directory will be created using platform specific API, so it will have appropriate icon and other settings special for this kind of folder.
-</td>
-							</tr>
-							<tr>
-								<td>
-									<code>none</code>
-								</td>
-								<td>Don't verify that folder exist.
-</td>
-							</tr>
-							<tr>
-								<td>
-									<code>verify</code>
-								</td>
-								<td>Verify that folder exists.
+</td></tr><tr><td><code>none</code></td><td>Don't verify that folder exist.
+</td></tr><tr><td><code>verify</code></td><td>Verify that folder exists.
  On Windows directory is verified using platform specific API.
-</td>
-							</tr>
-						</table>
-					</section>
-<section><h3>See Also</h3>
+</td></tr></table></section>
+<section><h2>See Also</h2>
 <p><code class="lang-d"><a href="../standardpaths/writablePath.html"><span class="pln">writablePath</span></a></code>
 </p>
 </section>
 
-			</section>
-			<section>
-				<h2>Authors</h2>
-<p><a href="https://github.com/FreeSlave">Roman Chistokhodov</a>
+<footer><table class="license-info"><tr><th>Authors</th><td><p><a href="https://github.com/FreeSlave">Roman Chistokhodov</a>
 </p>
-
-			</section>
-			<section>
-				<h2>Copyright</h2>
-<p>Roman Chistokhodov 2015-2016
+</td></tr><tr><th>Copyright</th><td><p>Roman Chistokhodov 2015-2016
 </p>
-
-			</section>
-			<section>
-				<h2>License</h2>
-<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+</td></tr><tr><th>License</th><td><p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
 </p>
-
-			</section>
-		</div>
-	</body>
-</html>
+</td></tr></table><p class="faint">Generated using the DDOX documentation generator</p></footer></div></body></html>

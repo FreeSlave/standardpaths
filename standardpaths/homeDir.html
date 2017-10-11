@@ -1,78 +1,28 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8"/>
-		<title>Function homeDir</title>
-		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
-		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
-		<script type="text/javascript" src="../scripts/jquery.js">/**/</script>
-		<script type="text/javascript" src="../scripts/ddox.js">/**/</script>
-	</head>
-	<body onload="setupDdox();">
-		<nav id="main-nav">
-						<ul class="tree-view">
-							<li>
-								<a href="../standardpaths.html" class="selected module">standardpaths</a>
-							</li>
-						</ul>
-				<noscript>
-					<p style="color: red">The search functionality needs JavaScript enabled</p>
-				</noscript>
-				<div id="symbolSearchPane" style="display: none">
-					<p>
-						<input id="symbolSearch" type="text" placeholder="Search for symbols" onchange="performSymbolSearch(24);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
-					</p>
-	<ul id="symbolSearchResults" style="display: none"></ul>
-	<script type="application/javascript" src="../symbols.js"></script>
-	<script type="application/javascript">
-var symbolSearchRootDir = "../";
-$('#symbolSearchPane').show();
-	</script>
-				</div>
-		</nav>
-		<div id="main-contents">
-			<h1>Function homeDir</h1>
-			<section>
-				<p>Current user home directory.
-</p>
-
-					<section>
-						<h3>Prototype</h3>
-						<div class="prototype">
-							<code class="lang-d">
-<span class="typ">string</span> <span class="pln">homeDir<span class="pun">()</span><span class="pln"> </span><span class="kwd">nothrow @safe</span><span class="pun">;</span>
-							</code>
-						</div>
-					</section>
-<section><h3>Returns</h3>
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8"/>
+<title>Function homeDir</title>
+<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+<script type="text/javascript" src="../scripts/jquery.js">/**/</script><script type="text/javascript" src="../scripts/ddox.js">/**/</script></head><body onload="setupDdox();"><nav id="main-nav"><noscript><p style="color: red">The search functionality needs JavaScript enabled</p></noscript><div id="symbolSearchPane" style="display: none"><form action="#" method="GET">
+<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/></form><ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script></div><ul class="tree-view"><li><div class="module selected"><a href="../standardpaths.html">standardpaths</a></div></li></ul></nav><div id="main-contents"><h1>Function homeDir</h1><p>Current user home directory.
+</p><div class="prototype"><code class="lang-d"><div class="single-prototype">
+<span class="typ">string</span> <span class="pln">homeDir
+<span class="pun">()</span><span class="pln"> </span><span class="kwd">nothrow @safe</span><span class="pun">;</span></div></code></div>
+<section><h2>Returns</h2>
 <p>Path to user home directory, or an empty string if could not determine home directory.
  Relies on environment variables.
 </p>
 </section>
-<section><h3>Note</h3>
+<section><h2>Note</h2>
 <p>This function does not cache its result.
 </p>
 </section>
 
-			</section>
-			<section>
-				<h2>Authors</h2>
-<p><a href="https://github.com/FreeSlave">Roman Chistokhodov</a>
+<footer><table class="license-info"><tr><th>Authors</th><td><p><a href="https://github.com/FreeSlave">Roman Chistokhodov</a>
 </p>
-
-			</section>
-			<section>
-				<h2>Copyright</h2>
-<p>Roman Chistokhodov 2015-2016
+</td></tr><tr><th>Copyright</th><td><p>Roman Chistokhodov 2015-2016
 </p>
-
-			</section>
-			<section>
-				<h2>License</h2>
-<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+</td></tr><tr><th>License</th><td><p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
 </p>
-
-			</section>
-		</div>
-	</body>
-</html>
+</td></tr></table><p class="faint">Generated using the DDOX documentation generator</p></footer></div></body></html>

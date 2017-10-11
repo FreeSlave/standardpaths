@@ -21,6 +21,8 @@
 <url><loc>http://127.0.0.1/standardpaths/StandardPath.music.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/StandardPath.pictures.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/StandardPath.publicShare.html</loc></url>
+<url><loc>http://127.0.0.1/standardpaths/StandardPath.roaming.html</loc></url>
+<url><loc>http://127.0.0.1/standardpaths/StandardPath.savedGames.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/StandardPath.startup.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/StandardPath.templates.html</loc></url>
 <url><loc>http://127.0.0.1/standardpaths/StandardPath.videos.html</loc></url>
