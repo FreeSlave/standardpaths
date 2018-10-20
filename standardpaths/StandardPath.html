@@ -1,76 +1,233 @@
-<!DOCTYPE html><html><head>
-<meta charset="UTF-8"/>
-<title>Enum StandardPath</title>
-<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
-<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
-<script type="text/javascript" src="../scripts/jquery.js">/**/</script><script type="text/javascript" src="../scripts/ddox.js">/**/</script></head><body onload="setupDdox();"><nav id="main-nav"><noscript><p style="color: red">The search functionality needs JavaScript enabled</p></noscript><div id="symbolSearchPane" style="display: none"><form action="#" method="GET">
-<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/></form><ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
-$('#symbolSearchPane').show();</script></div><ul class="tree-view"><li><div class="module selected"><a href="../standardpaths.html">standardpaths</a></div></li></ul></nav><div id="main-contents"><h1>Enum StandardPath</h1><p>Location types that can be passed to <code class="lang-d"><a href="../standardpaths/writablePath.html"><span class="pln">writablePath</span></a></code> and <code class="lang-d"><a href="../standardpaths/standardPaths.html"><span class="pln">standardPaths</span></a></code> functions.
-</p><div class="prototype"><code class="lang-d"><div class="single-prototype"><span class="kwd">enum</span> <span class="typ">StandardPath</span>
- <span class="pun">:</span> <span class="typ">int</span> <span class="pun">{ ... }</span></div></code></div><section><p>Not all these paths are suggested for showing in file managers or file dialogs.
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Enum StandardPath</title>
+		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../scripts/jquery.js">/**/</script><script type="text/javascript" src="../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module selected">
+						<a href="../standardpaths.html">standardpaths</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Enum StandardPath</h1><p>Location types that can be passed to <code class="lang-d"><a href="../standardpaths/writablePath.html"><span class="pln">writablePath</span></a></code> and <code class="lang-d"><a href="../standardpaths/standardPaths.html"><span class="pln">standardPaths</span></a></code> functions.
+</p>
+			<div class="prototype">
+				<code class="lang-d">
+					<div class="single-prototype">
+			<span class="kwd">enum</span> <span class="typ">StandardPath</span>
+			 <span class="pun">:</span> <span class="typ">int</span> <span class="pun">{ ... }</span>
+					</div>
+				</code>
+			</div>
+			<section><p>Not all these paths are suggested for showing in file managers or file dialogs.
  Some of them are meant for internal application usage or should be treated in special way.
  On usual circumstances user wants to see Desktop, Documents, Downloads, Pictures, Music and Videos directories.
 </p>
 </section>
 
-<section><h2>Enum members</h2><h4>Enum members</h4><table>
-<col class="caption"/>
-<tr><th>Name</th><th>Description</th></tr><tr><td><code>applications</code></td><td>User's applications. This has different meaning across platforms.
+			<section><h2>Enum members</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td id="applications">
+							<code>applications</code>
+						</td>
+						<td>User's applications. This has different meaning across platforms.
  On Windows it's directory where links (.lnk) to programs for Start menu are stored.
  On OS X it's folder where applications are typically put.
  On Freedesktop it's directory where .desktop files are put.
-</td></tr><tr><td><code>cache</code></td><td>Location of cached data.
+</td>
+					</tr>
+					<tr>
+						<td id="cache">
+							<code>cache</code>
+						</td>
+						<td>Location of cached data.
 <section><h4>Note</h4>
 <p>Not available on Windows.
 </p>
 </section>
-</td></tr><tr><td><code>config</code></td><td>General location of configuration files. Every application should have its own subdirectory here.
+</td>
+					</tr>
+					<tr>
+						<td id="config">
+							<code>config</code>
+						</td>
+						<td>General location of configuration files. Every application should have its own subdirectory here.
 <section><h4>Note</h4>
-<p>on Windows it's the same as <code class="lang-d"><a href="../standardpaths/StandardPath.data.html"><span class="pln">data</span></a></code> path.
+<p>on Windows it's the same as <code class="lang-d"><a href="../standardpaths/StandardPath.html#data"><span class="pln">data</span></a></code> path.
 </p>
 </section>
-</td></tr><tr><td><code>data</code></td><td>General location of persisted application data. Every application should have its own subdirectory here.
+</td>
+					</tr>
+					<tr>
+						<td id="data">
+							<code>data</code>
+						</td>
+						<td>General location of persisted application data. Every application should have its own subdirectory here.
 <section><h4>Note</h4>
-<p>on Windows it's the same as <code class="lang-d"><a href="../standardpaths/StandardPath.config.html"><span class="pln">config</span></a></code> path.
+<p>on Windows it's the same as <code class="lang-d"><a href="../standardpaths/StandardPath.html#config"><span class="pln">config</span></a></code> path.
 </p>
 </section>
-</td></tr><tr><td><code>desktop</code></td><td>User's desktop directory.
-</td></tr><tr><td><code>documents</code></td><td>User's documents.
-</td></tr><tr><td><code>downloads</code></td><td>Directory for user's downloaded files.
-</td></tr><tr><td><code>fonts</code></td><td>Location of fonts files.
+</td>
+					</tr>
+					<tr>
+						<td id="desktop">
+							<code>desktop</code>
+						</td>
+						<td>User's desktop directory.
+</td>
+					</tr>
+					<tr>
+						<td id="documents">
+							<code>documents</code>
+						</td>
+						<td>User's documents.
+</td>
+					</tr>
+					<tr>
+						<td id="downloads">
+							<code>downloads</code>
+						</td>
+						<td>Directory for user's downloaded files.
+</td>
+					</tr>
+					<tr>
+						<td id="fonts">
+							<code>fonts</code>
+						</td>
+						<td>Location of fonts files.
 <section><h4>Note</h4>
 <p>don't rely on this on freedesktop, since it uses hardcoded paths there. Better consider using <a href="http://www.freedesktop.org/wiki/Software/fontconfig/">fontconfig library</a>
 </p>
 </section>
-</td></tr><tr><td><code>music</code></td><td>User's music.
-</td></tr><tr><td><code>pictures</code></td><td>User's pictures.
-</td></tr><tr><td><code>publicShare</code></td><td>Public share folder.
+</td>
+					</tr>
+					<tr>
+						<td id="music">
+							<code>music</code>
+						</td>
+						<td>User's music.
+</td>
+					</tr>
+					<tr>
+						<td id="pictures">
+							<code>pictures</code>
+						</td>
+						<td>User's pictures.
+</td>
+					</tr>
+					<tr>
+						<td id="publicShare">
+							<code>publicShare</code>
+						</td>
+						<td>Public share folder.
 <section><h4>Note</h4>
 <p>Not available on Windows.
 </p>
 </section>
-</td></tr><tr><td><code>roaming</code></td><td>Roaming directory that stores a user data which should be shared between user profiles on different machines. Windows-only.
-</td></tr><tr><td><code>savedGames</code></td><td>Common directory for game save files. Windows-only.
-</td></tr><tr><td><code>startup</code></td><td>Automatically started applications.
+</td>
+					</tr>
+					<tr>
+						<td id="roaming">
+							<code>roaming</code>
+						</td>
+						<td>Roaming directory that stores a user data which should be shared between user profiles on different machines. Windows-only.
+</td>
+					</tr>
+					<tr>
+						<td id="savedGames">
+							<code>savedGames</code>
+						</td>
+						<td>Common directory for game save files. Windows-only.
+</td>
+					</tr>
+					<tr>
+						<td id="startup">
+							<code>startup</code>
+						</td>
+						<td>Automatically started applications.
  On Windows it's directory where links (.lnk) to autostarted programs are stored.
  On OSX it's not available.
  On Freedesktop it's directory where autostarted .desktop files are stored.
-</td></tr><tr><td><code>templates</code></td><td>Location of file templates (e.g. office suite document templates).
+</td>
+					</tr>
+					<tr>
+						<td id="templates">
+							<code>templates</code>
+						</td>
+						<td>Location of file templates (e.g. office suite document templates).
 <section><h4>Note</h4>
 <p>Not available on OS X.
 </p>
 </section>
-</td></tr><tr><td><code>videos</code></td><td>User's videos (movies).
-</td></tr></table></section>
-<section><h2>See Also</h2>
+</td>
+					</tr>
+					<tr>
+						<td id="videos">
+							<code>videos</code>
+						</td>
+						<td>User's videos (movies).
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>See Also</h2>
 <p><code class="lang-d"><a href="../standardpaths/writablePath.html"><span class="pln">writablePath</span></a></code>, <code class="lang-d"><a href="../standardpaths/standardPaths.html"><span class="pln">standardPaths</span></a></code>
 </p>
 </section>
 
-<footer><table class="license-info"><tr><th>Authors</th><td><p><a href="https://github.com/FreeSlave">Roman Chistokhodov</a>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							<p><a href="https://github.com/FreeSlave">Roman Chistokhodov</a>
 </p>
-</td></tr><tr><th>Copyright</th><td><p>Roman Chistokhodov 2015-2016
+
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							<p>Roman Chistokhodov 2015-2016
 </p>
-</td></tr><tr><th>License</th><td><p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
+
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost License 1.0</a>.
 </p>
-</td></tr></table><p class="faint">Generated using the DDOX documentation generator</p></footer></div></body></html>
+
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>
