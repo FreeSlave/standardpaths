@@ -909,9 +909,15 @@ version(Windows) {
         {
             enum carbonPath = "CoreServices.framework/Versions/A/CoreServices\0";
 
+            // This one still work as of macOS 15.1, it was used in Dplug for a good while
+            enum carbonPath2 = "/System/Library/Frameworks/CoreServices.framework/CoreServices\0";
+
             import core.sys.posix.dlfcn;
 
             void* handle = dlopen(carbonPath.ptr, RTLD_NOW | RTLD_LOCAL);
+            if (!handle)
+                handle = dlopen(carbonPath2.ptr, RTLD_NOW | RTLD_LOCAL);
+
             if (handle) {
                 ptrFSFindFolder = cast(typeof(ptrFSFindFolder))dlsym(handle, "FSFindFolder");
                 ptrFSRefMakePath = cast(typeof(ptrFSRefMakePath))dlsym(handle, "FSRefMakePath");
